@@ -22,23 +22,31 @@ const MoviePoster = styled.img`
   border-radius: 10px; /* Rounded corners for poster */
   margin-right: 20px; /* Space to the right of the image */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+  transition: transform 0.3s; /* Smooth zoom effect */
+  
+  &:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+  }
 `;
 
 const DetailsContent = styled.div`
   display: flex; /* Use flexbox for the details section */
   flex-direction: column; /* Align details vertically */
+  flex: 1; /* Allow content to grow and fill space */
 `;
 
 const MovieTitle = styled.h2`
   color: #343a40; /* Dark gray for title */
   margin-bottom: 10px; /* Space below title */
   font-size: 2rem; /* Large font size for title */
+  font-weight: bold; /* Make title bold */
 `;
 
 const MovieDetail = styled.p`
   font-size: 1.2rem; /* Font size for details */
   margin: 5px 0; /* Spacing between details */
   color: #495057; /* Darker gray for details */
+  line-height: 1.5; /* Improved readability */
 `;
 
 const BackButton = styled.button`
@@ -60,7 +68,7 @@ const BackButton = styled.button`
 const MovieDetails = ({ movie }) => {
   return (
     <DetailsContainer>
-      <MoviePoster src={movie.Poster} alt={movie.Title} />
+      <MoviePoster src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/200x300'} alt={movie.Title} />
       <DetailsContent>
         <MovieTitle>{movie.Title}</MovieTitle>
         <MovieDetail><strong>Plot:</strong> {movie.Plot}</MovieDetail>

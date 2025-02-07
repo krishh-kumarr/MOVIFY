@@ -13,3 +13,7 @@ Whether you're looking for your next watch or just exploring, Movify makes movie
 
 YOU CAN VIEW THE WEB APP HERE
 https://movify-7px5.vercel.app/
+<img width="1470" alt="Screenshot 2025-02-07 at 12 44 56" src="https://github.com/user-attachments/assets/935a30fe-d687-4e3d-a211-9470bb2074e1" />
+
+
+

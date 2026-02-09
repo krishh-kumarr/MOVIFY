@@ -101,14 +101,6 @@ The backend can be easily integrated and deployed once the model is production-r
 
 ![Movify Screenshot](https://github.com/user-attachments/assets/935a30fe-d687-4e3d-a211-9470bb2074e1)
 
----
-
-## 🧠 Interview-Ready Explanation
-
-> “The frontend is fully deployed and production-ready.  
-> The ML recommendation backend is a local prototype focused on experimentation and model quality, designed to be deployed once stabilized.”
-
----
 
 ## 📄 License
 This project is for educational and portfolio purposes.
